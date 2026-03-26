@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
+import BasicTable from './Tabla';
 import heroImg from './assets/hero.png'
 import './App.css'
 
@@ -99,6 +100,8 @@ function App() {
           </ul>
         </div>
       </section>
+
+      <BasicTable />
 
       <div className="ticks"></div>
       <section id="spacer"></section>
