@@ -1,7 +1,10 @@
 import './Acerca.css';
 import profilePhoto from '../assets/profile.jpeg';
+import { useAlumnoContext } from "../components/AlumnoContext";
 
 function Acerca() {
+  const { alumno } = useAlumnoContext();
+
   const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Dialog flow', 'Python'];
 
   return (
@@ -17,8 +20,10 @@ function Acerca() {
         </div>
 
         <div className="info-box">
-          <p><strong>Nombre:</strong> Wen Román</p>
-          <p><strong>Carrera:</strong> Ingeniería en Sistemas de la Información</p>
+          <p><strong>Nombre:</strong> {alumno.nombre}</p>
+          <p><strong>Carrera:</strong> {alumno.carrera}</p>
+          <p><strong>Grupo:</strong> {alumno.grupo}</p>
+          <p><strong>Semestre:</strong> {alumno.semestre}</p>
         </div>
 
         <p>

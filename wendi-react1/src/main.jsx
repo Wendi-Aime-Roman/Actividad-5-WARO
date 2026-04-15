@@ -4,11 +4,14 @@ import { BrowserRouter } from 'react-router-dom'
 import './Global.css'
 import './index.css'
 import App from './App.jsx'
+import { AlumnoProvider } from './components/AlumnoContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <AlumnoProvider>
+        <App />
+      </AlumnoProvider>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
