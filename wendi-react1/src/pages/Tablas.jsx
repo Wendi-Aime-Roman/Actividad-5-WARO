@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '../assets/vite.svg'
 import BasicTable from '../Tabla';
+import PerfilResumen from '../components/PerfilResumen';
 import heroImg from '../assets/hero.png'
 import '../App.css'
 import './Tablas.css'
@@ -27,6 +28,9 @@ function Tablas() {
     <div className="page-container">
       <div className="tablas-container">
         <h1>Página de Tablas y Contador</h1>
+
+        {/* Componente usando useContext */}
+        <PerfilResumen />
 
         <div className="contador-section">
           <h2>Contador Interactivo</h2>

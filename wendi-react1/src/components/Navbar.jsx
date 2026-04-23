@@ -11,6 +11,8 @@ function Navbar() {
       <Link to="/contacto" className="nav-link">Contacto</Link>
       <span className="separator">|</span>
       <Link to="/tablas" className="nav-link">Tablas</Link>
+      <span className="separator">|</span>
+      <Link to="/usuarios" className="nav-link">Usuarios</Link>
     </nav>
   );
 }

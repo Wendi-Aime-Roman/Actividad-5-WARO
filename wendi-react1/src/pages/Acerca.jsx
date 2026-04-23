@@ -1,6 +1,6 @@
 import './Acerca.css';
 import profilePhoto from '../assets/profile.jpeg';
-import { useAlumnoContext } from "../components/AlumnoContext";
+import { useAlumnoContext } from "../context/AlumnoContext";
 
 function Acerca() {
   const { alumno } = useAlumnoContext();
