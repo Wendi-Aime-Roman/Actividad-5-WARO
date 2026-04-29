@@ -27,7 +27,7 @@ function Usuarios() {
       </Typography>
 
       <TableContainer component={Paper}>
-        <Table>
+        <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell>Nombre</TableCell>
@@ -38,7 +38,10 @@ function Usuarios() {
           </TableHead>
           <TableBody>
             {usuarios.map((usuario) => (
-              <TableRow key={usuario.id}>
+              <TableRow
+                key={usuario.id}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
                 <TableCell>{usuario.name}</TableCell>
                 <TableCell>{usuario.email}</TableCell>
                 <TableCell>{usuario.phone}</TableCell>

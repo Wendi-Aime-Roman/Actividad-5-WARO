@@ -13,6 +13,8 @@ function Navbar() {
       <Link to="/tablas" className="nav-link">Tablas</Link>
       <span className="separator">|</span>
       <Link to="/usuarios" className="nav-link">Usuarios</Link>
+      <span className="separator">|</span>
+      <Link to="/mapa" className="nav-link">Mapa</Link>
     </nav>
   );
 }
