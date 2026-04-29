@@ -15,6 +15,8 @@ function Navbar() {
       <Link to="/usuarios" className="nav-link">Usuarios</Link>
       <span className="separator">|</span>
       <Link to="/mapa" className="nav-link">Mapa</Link>
+      <span className="separator">|</span>
+      <Link to="/ruta-google-maps" className="nav-link">Ruta Maps</Link>
     </nav>
   );
 }

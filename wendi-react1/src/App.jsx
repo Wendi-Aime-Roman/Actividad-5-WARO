@@ -5,6 +5,7 @@ import Contacto from "./pages/Contacto";
 import Tablas from "./pages/Tablas";
 import Usuarios from "./pages/Usuarios";
 import Mapa from "./pages/Mapa";
+import RutaGoogleMaps from "./pages/RutaGoogleMaps";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/tablas" element={<Tablas />} />
         <Route path="/usuarios" element={<Usuarios />} />
         <Route path="/mapa" element={<Mapa />} />
+        <Route path="/ruta-google-maps" element={<RutaGoogleMaps />} />
       </Routes>
     </>
   );

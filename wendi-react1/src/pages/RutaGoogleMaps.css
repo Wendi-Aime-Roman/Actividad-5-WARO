@@ -1,0 +1,96 @@
+.ruta-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ruta-container h1 {
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  text-align: center;
+}
+
+.ruta-container p {
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.controles {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.select-transporte {
+  padding: 10px 15px;
+  border: 2px solid #4285F4;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.select-transporte:hover {
+  border-color: #1a73e8;
+  box-shadow: 0 2px 6px rgba(66, 133, 244, 0.3);
+}
+
+.btn-calcular {
+  padding: 10px 25px;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-calcular:hover:not(:disabled) {
+  background-color: #1a73e8;
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-calcular:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.info-ruta {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: white;
+  border-left: 5px solid #4285F4;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-ruta h3 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.info-ruta p {
+  color: #555;
+  margin: 10px 0;
+  font-size: 15px;
+  text-align: left;
+}
+
+.info-ruta strong {
+  color: #4285F4;
+}
